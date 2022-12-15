@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// init of calculation methods
 int GregoryLeibniz(long iterations);
 
 int main()
@@ -15,7 +16,6 @@ int main()
 	scanf("%ld", &iterations);
 	if (method == 1)
 	{
-
 		GregoryLeibniz(iterations);
 	}
 	return 0;
@@ -25,7 +25,7 @@ int GregoryLeibniz(long iterations)
 {
 	// this calculates pi using the Gregory - Leibniz method, while it does not converge fast
 	// it works and is very simple to implement
-	int divisor = 1.0;
+	int divisor = 1;
 	int add = 0;
 
 	double sum = 1.0;
